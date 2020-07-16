@@ -130,19 +130,9 @@ button {
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/Open Sans Light.eot");
-  src: url("../fonts/Open Sans Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans Light.woff") format("woff"), url("../fonts/Open Sans Light.ttf") format("truetype"), url("../fonts/Open Sans Light.svg#Open Sans Light") format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-FFFD;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/Open Sans Bold.eot");
-  src: url("../fonts/Open Sans Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans Bold.woff") format("woff"), url("../fonts/Open Sans Bold.ttf") format("truetype"), url("../fonts/Open Sans Bold.svg#Open Sans Bold") format("svg");
-  font-weight: 700;
+  font-family: 'Oswald';
+  src: url("../font/Oswald/Oswald-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+0020-FFFD;
@@ -302,6 +292,40 @@ h3 {
   flex-grow: 1;
   -webkit-flex-grow: 1;
   background: #fff000;
+}
+
+.first-section__bg {
+  position: absolute;
+  width: 100%;
+}
+.first-section__bg img {
+  width: 100%;
+  height: 740px;
+}
+
+.first-section__content {
+  padding: 168px 0;
+}
+.first-section__content h1 {
+  font-family: Oswald, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 95px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.first-section__content p {
+  font-family: Oswald, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
