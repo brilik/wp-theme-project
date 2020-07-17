@@ -373,9 +373,13 @@ h3 {
   justify-content: space-around;
   padding-bottom: 75px;
 }
+.second-section__posts a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 .posts {
   max-width: 350px;
+  margin: 8px;
 }
 .posts img {
   height: 380px;

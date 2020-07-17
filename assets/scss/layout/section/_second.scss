@@ -17,10 +17,15 @@
   display: flex;
   justify-content: space-around;
   padding-bottom: 75px;
+
+  a:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
 }
 
 .posts {
   max-width: 350px;
+  margin: 8px;
 
   img {
     height: 380px;
