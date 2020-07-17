@@ -294,6 +294,10 @@ h3 {
   background: #FFFFFF;
 }
 
+.first-section {
+  height: 740px;
+}
+
 .first-section__bg {
   position: absolute;
   width: 100%;
