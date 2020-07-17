@@ -3,8 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #FFF;
+  font-family: Oswald, sans-serif;
+  background-color: #FFFFFF;
   height: 100%;
   line-height: 1;
   position: relative;
@@ -56,7 +56,7 @@ html {
 input,
 textarea {
   color: #333;
-  font-family: Arial, sans-serif;
+  font-family: Oswald, sans-serif;
   outline: none;
   border-radius: 0;
   -moz-border-radius: 0;
@@ -215,7 +215,7 @@ p {
 
 h1 {
   font-size: 36px;
-  line-height: 42px;
+  line-height: 53px;
   color: #000;
   font-family: "Open Sans", sans-serif;
   padding: 15px 0 15px 0;
@@ -232,8 +232,8 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 36px;
   color: #000;
   font-family: "Open Sans", sans-serif;
   padding: 15px 0 15px 0;
@@ -291,7 +291,7 @@ h3 {
   -webkit-order: 2;
   flex-grow: 1;
   -webkit-flex-grow: 1;
-  background: #fff000;
+  background: #FFFFFF;
 }
 
 .first-section__bg {
@@ -326,6 +326,90 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.second-section__content h2 {
+  font-family: Oswald, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #404149;
+  padding-top: 80px;
+  padding-bottom: 42px;
+}
+
+.second-section__posts {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 75px;
+}
+
+.posts {
+  max-width: 350px;
+}
+.posts img {
+  height: 380px;
+}
+.posts .posts-line {
+  width: 55px;
+  height: 6px;
+  background-color: #EE913B;
+  margin-top: 45px;
+}
+.posts h3 {
+  font-family: Oswald, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #404149;
+}
+.posts p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+  padding-top: 5px;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .posts {
+    width: 250px;
+  }
+  .posts img {
+    max-width: 250px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .second-section__content h2 {
+    padding: 100px 0;
+  }
+
+  .second-section__posts {
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin: 0 60px;
+  }
+
+  .posts {
+    width: 500px;
+  }
+  .posts img {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .second-section__posts {
+    justify-content: center;
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
