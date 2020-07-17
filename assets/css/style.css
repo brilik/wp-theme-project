@@ -370,7 +370,7 @@ h3 {
 
 .second-section__posts {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 75px;
 }
 
