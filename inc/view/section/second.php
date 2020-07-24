@@ -5,10 +5,18 @@ $posts = new WP_Query((array(
     'orderby'     => 'date',
     'order'       => 'ASC',
     'post_type'   => 'projects'
-))); ?>
+)));
+$secondSectionTitle = get_post_meta(get_the_ID(), 'title_second_section',true);
+?>
 <section class="second-section">
     <div class="second-section__content">
-        <h2>Наши самые большие проекты</h2>
+        <?php
+        if ($secondSectionTitle) {
+            echo '<h2>';
+            esc_html_e($secondSectionTitle, TXTDOMAIN);
+            echo '</h2>';
+        }
+        ?>
         <div class="wrapper">
             <div class="second-section__posts">
                 <?php while ($posts->have_posts()) : $posts->the_post(); ?>
