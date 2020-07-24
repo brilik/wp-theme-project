@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support( 'post-thumbnails', array( 'projects', 'post' ) );
+
 function the_view($view_name, $args = [])
 {
     try {
