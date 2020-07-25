@@ -4,7 +4,9 @@
     <main class="content">
         <?php while (have_posts()) : the_post();
             the_view('section__first');
-            the_view('section__number-info');
+            if(function_exists('number_info')) {
+                number_info();
+            }
             the_view('section__second');
         endwhile; ?>
     </main>
